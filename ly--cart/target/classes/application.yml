@@ -1,0 +1,22 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: cart-service
+  redis:
+    host: 192.168.153.129
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+ly:
+  jwt:
+    pubKeyPath: D:/GitHub_Code/leyou-20200502-copy/rsa/rsa.pub # 公钥地址
+    cookieName: LY_TOKEN
